@@ -1,0 +1,36 @@
+.request {
+    background: url(https://static.wixstatic.com/media/6282e125651246cf8362f57d8d5a9b67.jpg_srz_2264_378_85_22_0.50_1.20_0.00_jpg_srz)no-repeat 50%/cover;
+    &__grid {
+        display: grid;
+        grid: 1fr / repeat(2, 1fr);
+        padding: 20px 0;
+    }
+    &__text {
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    &__slogan {
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: 1.2px;
+        span {
+            color: $orange;
+        }
+    }
+    &__discount {
+        text-align: center;
+        font-weight: 700;
+    }
+    &__divider {
+        width: 50%;
+        height: 4px;
+        background-color: $orange;
+        margin: 30px auto;
+    }
+    &__subtitle {
+        font-weight: 700;
+        text-align: center;
+    }
+}

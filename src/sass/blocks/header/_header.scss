@@ -4,7 +4,7 @@
 // }
 
 .header{
-    // Позиционирование
+    margin-bottom: 20px;
     &__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -20,6 +20,7 @@
     &__slogan {
         text-align: center;
         font-weight: 700;
+        font-size: 23px;
     }
     &__block {
         display: flex;
@@ -34,13 +35,14 @@
     &__time {
         text-align: center;
         margin-top: 50px;
+        text-transform: uppercase;
     }
     &__buttons {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        align-items: center;
-    }
+        align-items: flex-end;
+    }  
 
     &__link {
         color: #000;
