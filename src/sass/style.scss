@@ -12,7 +12,7 @@
 }
 
 .container {
-    width: 1140px;
+    width: 1140px !important;
     margin: 0 auto;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -25,15 +25,15 @@ body {
 
 a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: none !important;
     &:hover{
-        color: $orange;
+        color: $orange !important;
     }
 }
 
 ul {
-    padding-left: 0;
-    margin-bottom: 0;
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
 }
 
 // Стили блоков:
@@ -45,11 +45,11 @@ ul {
 @import 'blocks/forma';
 @import 'blocks/serv-list';
 @import 'blocks/hamburger';
-// @import 'blocks';
-// @import 'blocks';
-// @import 'blocks';
-// @import 'blocks';
-// @import 'blocks';
+@import 'blocks/buttons-reviews';
+@import 'blocks/serv-price';
+@import 'blocks/price';
+@import 'blocks/video';
+@import 'blocks/slogan';
 // @import 'blocks';
 // @import 'blocks';
 // @import 'blocks';

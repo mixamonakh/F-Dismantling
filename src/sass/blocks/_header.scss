@@ -167,6 +167,11 @@ svg {
         &__buttons {
             margin: 0 auto;
         }
+        &__link {
+            width: 150px;
+            border-bottom: none;
+            text-decoration: underline;
+        }
     }
 
 }

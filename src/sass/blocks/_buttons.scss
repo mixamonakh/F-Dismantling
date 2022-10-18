@@ -4,10 +4,14 @@
     border-radius: 10px;
     font-weight: 700;
     text-transform: uppercase;
+    &_menu {
+        color: #fff;
+    }
     &_header {
         padding: 5px;
         width: 200px;
         text-align: center;
+        color: #fff;
         &-green {
             background-color: $green;
         }
@@ -20,6 +24,15 @@
         border-radius: unset;
         font-weight: 500;
         padding: 5px 20px 5px 20px;
+    }
+    &_reviews {
+        color: #fff;
+        width: 300px;
+        height: 60px;
+        background-color: $green;
+        border: none;
+        font-size: 20px;
+        letter-spacing: 1px;
     }
 }
 

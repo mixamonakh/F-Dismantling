@@ -27,6 +27,7 @@
         &-text {
             margin-top: 65px;
             a {
+                color: #fff;
                 font-weight: 700;
             }
             input {
@@ -70,6 +71,14 @@ textarea {
     padding: 5px;
     outline: none;
     font-size: 15px;
+}
+@media (max-width: 1200px) {
+    .forma {
+        &__button {
+            right: 125px;
+            bottom: 74px;
+        }
+    }
 }
 
 @media (max-width: 992px) {

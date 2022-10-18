@@ -1,6 +1,7 @@
 .serv-list {
     position: relative;
     z-index: 1;
+    margin-bottom: 30px;
     &__title {
         margin-bottom: 20px;
         font-weight: 700;
@@ -14,25 +15,12 @@
         align-items: center;
         width: 750px;
         gap: 10px;
-        background-color: rgba(19, 2, 250, 0.8);
+        background-color: $blue;
         padding: 10px;
         color: #fff;
         border-radius: 20px;
         margin: 0 auto;
         font-size: 17px;
-    }
-    &__item {
-        position: relative;
-        &:before {
-            content: '';
-            width: 15px;
-            height: 15px;
-            margin-right: 10px;
-            display: inline-block;
-            background-image: url(../icons/crane.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-        }
     }
 }
 
