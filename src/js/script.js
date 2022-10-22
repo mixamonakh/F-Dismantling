@@ -29,7 +29,29 @@ var slider = tns({
     nav: false,
     freezable: false,
     autoplayButtonOutput: false,
-    controls: false
+    controls: false,
+    startIndex: 1,
+    // autoplayPosition: ,
+    responsive: {
+      320: {
+        items: 1
+      },
+      700: {
+        items: 2,
+        autoWidth: true
+      },
+      992: {
+        items: 3,
+        autoWidth: true
+      },
+      1200: {
+        items: 4,
+        autoWidth: true
+      },
+      1400: {
+        items: 4
+      }
+    }
   });
 
   document.querySelector('.prev').onclick = function () {
