@@ -18,3 +18,23 @@ window.addEventListener('DOMContentLoaded', () => {
         })
     })
 })
+
+// Тини слайдер
+
+var slider = tns({
+    container: '.my-slider',
+    items: 4,
+    slideBy: 'page',
+    autoplay: true,
+    nav: false,
+    freezable: false,
+    autoplayButtonOutput: false,
+    controls: false
+  });
+
+  document.querySelector('.prev').onclick = function () {
+    slider.goTo('prev');
+  };
+  document.querySelector('.next').onclick = function () {
+    slider.goTo('next');
+  };
