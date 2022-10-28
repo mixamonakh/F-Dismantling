@@ -1,0 +1,40 @@
+.portfolio {
+    margin: 30px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-wrapper {
+    width: 50% !important;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide-foot img {
+    background-color: #fff;
+    border-radius: 15px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+@media (max-width: 576px) {
+    .title {
+        &_port {
+            font-size: 35px;
+        }
+    }
+}

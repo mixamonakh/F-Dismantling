@@ -1,0 +1,70 @@
+.services{
+    position: relative;
+    z-index: 1;
+    margin: 30px 0;
+    &__title {
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 700;
+        background-color: #fff;
+        display: inline;
+        margin-bottom: 0;
+        padding: 10px 30px 7px 30px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    &__info {
+        font-size: 18px;
+        background-color: #fff;
+        padding: 15px;
+    }
+    &__block {
+        // height: 600px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 1px 22px -12px rgba(2, 2, 2, 0.28);
+        transition: .5s all;
+        position: relative;
+        cursor: pointer;
+        &:hover {
+            transform: scale(98%);
+        }
+    }
+    &__wrapper {
+        background: url(https://static.tildacdn.com/tild3835-3562-4461-b963-613437333734/66f3561834047c17b9d9.jpg)no-repeat 50%/cover;
+        height: 100%;
+        position: relative;
+        height: 300px;
+    }
+    &__url {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+    .services {
+        &__block {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+}

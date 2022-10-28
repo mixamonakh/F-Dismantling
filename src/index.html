@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <title>Document</title>
 </head>
 <body>
@@ -21,7 +22,7 @@
             <div class="container">
                 <div class="header__grid">
                     <div class="header__logo">  <!-- Логотип -->
-                        <img src="img/logo.png" alt="">
+                        <a href="#"><img src="img/logo.png" alt=""></a>
                     </div>
                     <div>       <!-- Номера телефонов и Блок текста -->
                         <div class="header__block">
@@ -144,7 +145,7 @@
                         <form action="mailer/smart.php">
                             <input type="text" name="name" required placeholder="Имя*">
                             <input type="text" name="mail" required placeholder="Эл. почта*">
-                            <input type="text" name="phone" placeholder="Телефон">
+                            <input type="text" name="phone" required placeholder="Телефон">
                             <textarea name="text" id="text" placeholder="Добавьте сообщение, при желании укажите ваш номер телефона и мы перезвоним вам.."></textarea>
                             <button type="submit" class="button button_forma forma__button">Отправить</button>
                             <div class="forma__check-text">
@@ -304,32 +305,32 @@
                 <div class="my-slider">
                     <div class="advantage-slider__block">
                         <div class="advantage-slider__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deserunt nobis quaerat culpa dignissimos. Ex.
+                            1Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deserunt nobis quaerat culpa dignissimos. Ex.
                         </div>
                     </div>
                     <div class="advantage-slider__block">
                         <div class="advantage-slider__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deserunt nobis quaerat culpa dignissimos. Ex.
+                            2Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deserunt nobis quaerat culpa dignissimos. Ex.
                         </div>
                     </div>
                     <div class="advantage-slider__block">
                         <div class="advantage-slider__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deserunt nobis quaerat culpa dignissimos. Ex.
+                            3Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deserunt nobis quaerat culpa dignissimos. Ex.
                         </div>
                     </div>
                     <div class="advantage-slider__block">
                         <div class="advantage-slider__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deserunt nobis quaerat culpa dignissimos. Ex.
+                            4Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deserunt nobis quaerat culpa dignissimos. Ex.
                         </div>
                     </div>
                     <div class="advantage-slider__block">
                         <div class="advantage-slider__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deserunt nobis quaerat culpa dignissimos. Ex.
+                            5Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deserunt nobis quaerat culpa dignissimos. Ex.
                         </div>
                     </div>
                     <div class="advantage-slider__block">
                         <div class="advantage-slider__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deserunt nobis quaerat culpa dignissimos. Ex.
+                            6Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis deserunt nobis quaerat culpa dignissimos. Ex.
                         </div>
                     </div>
                   </div>
@@ -337,10 +338,174 @@
                   <button class="next"><img src="../icons/right.svg" alt=""></button>
             </div>
         </section>
+        <!-- Секция услуги -->
+        <section class="services">
+            <div class="container">
+                <h2 class="title">наши услуги</h2>
+                <div class="row">
+                    <div class="services__block col-md-4">
+                        <a href="#" class="services__url"></a>
+                        <div class="services__wrapper">
+                            <h3 class="services__title">демонтаж</h3>
+                        </div>
+                        <div class="services__info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque molestias et neque culpa, perspiciatis deserunt doloremque sed ea aliquam, rerum incidunt sequi quod recusandae est dolores magni asperiores porro aliquid!
+                            
+                        </div>
+                    </div>
+                    <div class="services__block col-md-4">
+                        <a href="#" class="services__url"></a>
+                        <div class="services__wrapper">
+                            <h3 class="services__title">демонтаж</h3>
+                        </div>
+                        <div class="services__info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque molestias et neque culpa, perspiciatis deserunt doloremque sed ea aliquam, rerum incidunt sequi quod recusandae est dolores magni asperiores porro aliquid!
+                        </div>
+                    </div>
+                    <div class="services__block col-md-4">
+                        <a href="#" class="services__url"></a>
+                        <div class="services__wrapper">
+                            <h3 class="services__title">демонтаж</h3>
+                        </div>
+                        <div class="services__info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque molestias et neque culpa, perspiciatis deserunt doloremque sed ea aliquam, rerum incidunt sequi quod recusandae est dolores magni asperiores porro aliquid!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Секция Конаткты -->
+        <section class="portfolio">
+            <div class="container">
+                <button class="button button_port">
+                    <h2 class="title title_port">
+                        <a href="#">Примеры работ</a>
+                    </h2>
+                </button>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                              </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
+    <footer>
+        <div class="container">
+            <h2 class="title title_foot">контакты</h2>
+            <div class="row">
+                <div class="footer col-lg-6">
+                    <div class="footer__title">менеджер</div>
+                    <div class="footer__wrapper">
+                        <div>
+                            <img src="icons/footer/phone.svg" alt="phone">
+                        </div>
+                        <a href="tel:+79919355645" class="footer__url">+7(991) 935 56-45</a>
+                    </div>
+                    <div class="footer__wrapper">
+                        <div>
+                            <img src="icons/footer/phone2.svg" alt="phone">
+                        </div>
+                        <a href="tel:+74999645179" class="footer__url">+7(499) 964 51-79</a>
+                    </div>
+                    <div class="footer__wrapper footer__wrapper-mb">
+                        <div>
+                            <img src="icons/footer/mail.svg" alt="mail">
+                        </div>
+                        <a href="mail:prof-montagemoscow@yandex.ru" class="footer__url">PROF-MONTAGEMOSCOW@YANDEX.RU</a>
+                    </div>
+                    <!-- Whatsapp -->
+                    <div class="footer__wrapper">
+                        <div>
+                            <img src="icons/footer/wa.svg" alt="whatsapp">
+                        </div>
+                        <a href="" class="footer__url">WhatsApp</a>
+                    </div>
+                    <!-- Часики -->
+                    <div class="footer__wrapper footer__wrapper-clock">
+                        <div>
+                            <img src="icons/footer/clockF.svg" alt="clock">
+                        </div>
+                        <div class="footer__text">
+                            <span>С 09:00 ДО 22:00</span>
+                            <span class="footer__subtitle">без обеда и выходных</span>
+                        </div>
+                    </div>
+                    <div class="footer__divider"></div>
+                    <div class="social">
+                        <a href=""><img src="icons/footer/tg.svg" alt="telegram"></a>
+                        <a href=""><img src="icons/footer/vk.svg" alt="vkontakte"></a>
+                        <a href=""><img src="icons/footer/ok.svg" alt="odniklasniki"></a>
+                        <a href=""><img src="icons/footer/youtube.svg" alt="youtube"></a>
+                        <a href=""><img src="icons/footer/insta.svg" alt="instagram"></a>
+                        <a href=""><img src="icons/footer/fb.svg" alt="facebook"></a>
+                    </div>
+                </div>
+                <!-- <div class="footer__block col-md-6">
+                    <h3 class="footer__clients">наши клиенты</h3>
+                    <div class="footer__grid">
+                        <img src="https://apmo.ru/upload/iblock/7a2/7a22c16076528316f9fde00d2927b7f1.png" alt="" class="footer__img">
+                        <img src="https://static.tildacdn.com/tild3334-3563-4835-a133-386433623830/FT_rus_1.png" alt="">
+                    </div>
+                </div> -->
+                <div class="footer__block col-lg-6">
+                    <h3 class="footer__title">наши клиенты</h3>
+                    <div class="swiper mySwiperFoot">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide swiper-slide-foot">
+                            <img src="https://static.tildacdn.com/tild3334-3563-4835-a133-386433623830/FT_rus_1.png" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+            </div>
+            </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -60,3 +60,68 @@ var slider = tns({
   document.querySelector('.next').onclick = function () {
     slider.goTo('next');
   };
+
+  // Галерея
+
+  var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    initialSlide: 1,
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
+// Футер - клиенты
+
+  var swiper = new Swiper(".mySwiperFoot", {
+    effect: "flip",
+    grabCursor: true,
+    pagination: {
+      el: ".swiper-pagination",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+// Маска, валидация, мейлер
+
+$('input[name=phone]').mask("+7 (999) 999-99-99");
+
+$("form").each(function () {
+  $(this).validate({
+    rules: {
+      phone: "required",
+      check: "required"
+    },
+    messages: {
+      name: 'Введите ваше имя',
+      mail: 'Введите вашу почту',
+      phone: 'Введите ваш номер телефона'
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: $(form).attr('action'),
+        data: $(form).serialize()
+      }).done(function () {
+        $(form).find("input").val(""), 
+        $('#modalHeader, #modalPhone').fadeOut(),
+        $(".overlay, #modalThanks").fadeIn("slow"), 
+        $("form").trigger("reset")
+      });
+      return false;
+    }
+  });
+});

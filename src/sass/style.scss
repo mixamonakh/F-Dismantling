@@ -37,10 +37,20 @@ ul {
 }
 
 .title {
-    font-size: 40px;
+    font-size: 50px;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 40px;
+    &_port {
+        margin-bottom: 0;
+        a {
+            color: #212529;
+        }
+    }
+    &_foot {
+        color: #fff;
+    }
 }
 
 // Стили блоков:
@@ -58,5 +68,9 @@ ul {
 @import 'blocks/video';
 @import 'blocks/slogan';
 @import 'blocks/advantage';
+@import 'blocks/services';
+@import 'blocks/portfolio';
+@import 'blocks/footer';
+// @import 'blocks';
 // @import 'blocks';
 // @import 'blocks';

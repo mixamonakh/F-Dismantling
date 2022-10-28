@@ -4,6 +4,9 @@
     flex-direction: column;
     position: relative;
     min-height: 400px;
+    label.error {
+        color: red;
+    }
     &__title {
         text-transform: uppercase;
         font-weight: 700;
@@ -56,6 +59,7 @@ form {
     gap: 5px;
     z-index: 3;
     margin-left: 57px;
+    position: relative;
 }
 input {
     width: 200px;
@@ -72,6 +76,7 @@ textarea {
     outline: none;
     font-size: 15px;
 }
+
 @media (max-width: 1200px) {
     .forma {
         &__button {
