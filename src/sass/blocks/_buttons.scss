@@ -4,7 +4,7 @@ button {
 
 .button {
     background-color: rgb(21, 29, 195);
-    padding: 5px 9px 5px 9px;
+    padding: 15px;
     border-radius: 10px;
     font-weight: 700;
     text-transform: uppercase;
@@ -12,10 +12,14 @@ button {
         color: #fff;
     }
     &_header {
-        padding: 5px;
-        width: 200px;
+        padding: 15px;
+        width: 250px;
         text-align: center;
         color: #fff;
+        transition: .6s all;
+        &:hover {
+            transform: scale(99%);
+        }
         &-green {
             background-color: $green;
         }
@@ -53,7 +57,9 @@ button {
 }
 
 @media (max-width: 1200px) {
-
+    .button {
+        padding: 5px;
+    }
 }
 
 @media (max-width: 992px) {
@@ -69,9 +75,19 @@ button {
         &_menu {
             background-color: unset;
         }
+        &_header {
+            padding: 5px;
+        }
     }
 }
 
 @media (max-width: 576px) {
-
+    .button {
+        &_header {
+            padding: 15px;
+            &-green {
+                margin-bottom: 10px;
+            }
+        }
+    }
 }

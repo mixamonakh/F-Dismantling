@@ -1,6 +1,7 @@
 .serv-price {
     &__item {
         position: relative;
+        // font-size: 25px !important;
         &:before {
             content: '';
             width: 15px;
@@ -15,7 +16,6 @@
     &_price {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         font-size: 18px;
     }
@@ -36,5 +36,11 @@
 }
 
 @media (max-width: 576px) {
-
+    .serv-price {
+        &__item {
+            font-size: 22px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #fff;
+        }
+    }
 }

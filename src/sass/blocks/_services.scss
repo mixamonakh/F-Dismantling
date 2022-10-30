@@ -32,21 +32,21 @@
         }
     }
     &__wrapper {
-        background: url(https://static.tildacdn.com/tild3835-3562-4461-b963-613437333734/66f3561834047c17b9d9.jpg)no-repeat 50%/cover;
         height: 100%;
         position: relative;
         height: 300px;
     }
-    &__url {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 2;
-    }
 }
 
+.img {
+    background: url(../img/serv/img.jpeg)no-repeat 50%/cover;
+}
+.img1 {
+    background: url(../img/serv/img.jpg)no-repeat 50%/cover;
+}
+.img2 {
+    background: url(../img/serv/img1.jpg)no-repeat 50%/cover;
+}   
 
 
 @media (max-width: 1200px) {

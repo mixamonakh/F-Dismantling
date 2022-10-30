@@ -1,0 +1,17 @@
+User-agent: Yandex
+Disallow: /privacy.html
+Disallow: /css/
+Disallow: /js/
+Disallow: /mailer/
+User-agent: Googlebot
+Disallow: /privacy.html
+Disallow: /css/
+Disallow: /js/
+Disallow: /mailer/
+User-agent: *
+Disallow: /privacy.html
+Disallow: /css/
+Disallow: /js/
+Disallow: /mailer/
+
+Sitemap: https://profmontagmoscow.ru/sitemap.xml

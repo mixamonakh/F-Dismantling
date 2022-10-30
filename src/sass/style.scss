@@ -53,6 +53,24 @@ ul {
     }
 }
 
+@keyframes scale {
+    0% {
+        transform: scale(100%);
+    }
+    50% {
+        transform: scale(103%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+.anim {
+    animation: scale .6s infinite;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 // Стили блоков:
 
 @import 'blocks/header';
@@ -71,6 +89,12 @@ ul {
 @import 'blocks/services';
 @import 'blocks/portfolio';
 @import 'blocks/footer';
+@import 'blocks/coment';
+@import 'blocks/portf';
 // @import 'blocks';
-// @import 'blocks';
-// @import 'blocks';
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 37px;
+    }
+}

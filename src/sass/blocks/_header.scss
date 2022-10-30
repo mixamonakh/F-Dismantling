@@ -1,5 +1,5 @@
 .wrapper-background {
-    background: url(https://static.tildacdn.com/tild3835-3562-4461-b963-613437333734/66f3561834047c17b9d9.jpg)no-repeat 50%/cover;
+    background: url(../img/bg.jpg)no-repeat 50%/cover;
     padding: 20px 0;
     position: relative;
 }
@@ -25,6 +25,10 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         margin-bottom: 70px;
+    }
+    &__logo {
+        width: 200px;
+        height: 100%;
     }
     &__wrapper {
         display: flex;
@@ -157,6 +161,11 @@ svg {
         padding: 0 10px;
     }
     .header {
+        &__logo {
+            width: 200px;
+            display: block;
+            margin: 0 auto;
+        }
         &__grid {
             grid: 1fr / 1fr;
             gap: 20px;

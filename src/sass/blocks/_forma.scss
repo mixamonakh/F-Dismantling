@@ -1,5 +1,4 @@
 .forma {
-    // background: url(../img/form.jpg)no-repeat 50%/cover;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -77,6 +76,65 @@ textarea {
     font-size: 15px;
 }
 
+.overlay_form {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, .56);
+    display: none;
+}
+
+.modall {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F2F2F2;
+    width: 382px;
+    height: 150px;
+    padding: 38px 40px 40px 40px;
+    z-index: 1000;
+}
+.modall_rec {
+    background: #000;
+    height: auto;
+    z-index: 1000;
+    border-radius: 20px; 
+}
+
+.modall__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 41px;
+    line-height: 21px;
+    color: #000;
+    cursor: pointer;
+}
+.modall__close_white {
+    color: #fff;
+}
+
+.modall__subtitle {
+    color: #0D0D0D;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+.modall__descr {
+    color: #0D0D0D;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+}
+
+#thanks {
+    display: none;
+}
+
 @media (max-width: 1200px) {
     .forma {
         &__button {
@@ -122,7 +180,7 @@ textarea {
             width: 320px;
             display: none;
         }
-        &__block {
+        &__block {  
             color: #fff;
             margin-left: unset;
             margin: 20px 0 20px 0;
@@ -138,10 +196,13 @@ textarea {
     input {
         width: 100%;
         font-size: 20px;
+        height: 45px;
+        padding: 10px;
     }
     textarea {
         width: 100%;
         font-size: 20px;
         height: 150px;
+        padding: 10px;
     }
 }

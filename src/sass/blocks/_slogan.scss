@@ -9,7 +9,11 @@
     }
     &__img {
         width: 300px;
-        border-radius: 5px;
+        border-radius: 25px;
+        transition: .5s all;
+        &:hover {
+            transform: scale(97%);
+        }
     }
     &__text {
         display: flex;
@@ -18,7 +22,9 @@
         justify-content: center;
         color: #fff;
         font-weight: 700;
-        font-size: 25px;
+        font-size: 35px;
+        text-transform: uppercase;
+        text-align: center;
     }
 }
 

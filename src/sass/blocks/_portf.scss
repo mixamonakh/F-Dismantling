@@ -1,0 +1,35 @@
+.portf {
+    position: relative;
+    z-index: 1;
+    padding: 20px 0 50px 0;
+    h2 {
+        margin-bottom: 30px;
+    }
+    &__slider {
+        margin-bottom: 40px;
+        h3 {
+            font-size: 35px;
+            font-weight: 700;
+        }
+    }
+    &__video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .portf {
+        &__slider {
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+}

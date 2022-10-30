@@ -6,6 +6,10 @@ ul.menu {
 }
 li.menu__item {
     list-style-type: none;
+    transition: .6s all;
+    &:hover {
+        transform: scale(95%);
+    }
 }
 @media (max-width: 992px) {
     ul.menu {
@@ -34,5 +38,10 @@ li.menu__item {
 }
 
 @media (max-width: 576px) {
-
+    .menu {
+        &__item {
+            font-size: 21px;
+            margin-left: 10px;
+        }
+    }
 }

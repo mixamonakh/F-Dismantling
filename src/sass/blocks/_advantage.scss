@@ -21,7 +21,7 @@
 .advantage-slogan {
     margin: 10px 0 30px 0;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 27px;
     padding: 10px 0;
     text-align: justify;
     border-top: 2px solid #000;
@@ -39,17 +39,13 @@
         height: 250px;
         padding: 20px;
         text-align: center;
-        position: relative;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
     }
     &__text {
         text-transform: uppercase;
         color: $orange;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        margin: auto 0;
-        transform: translateX(-9px);
-        height: 100px;
     }
 }
 .my-slider {
@@ -99,5 +95,11 @@
         &__text {
             font-size: 20px;
         }
+    }
+    .advantage-slogan {
+        text-align: left;
+    }
+    .my-slider {
+        gap: 0;
     }
 }
